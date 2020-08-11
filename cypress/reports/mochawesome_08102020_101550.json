@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-08-10T13:15:45.163Z",
+    "end": "2020-08-10T13:15:50.072Z",
+    "duration": 4909,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7580bda3-f4a4-4867-acc2-bfb545585894",
+      "title": "",
+      "fullFile": "cypress\\integration\\dasa_test.js",
+      "file": "cypress\\integration\\dasa_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6ae897e1-040b-4d49-9e96-2a590d625304",
+          "title": "Desafio Dasa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve direcionar para laboratório especifico",
+              "fullTitle": "Desafio Dasa Deve direcionar para laboratório especifico",
+              "timedOut": null,
+              "duration": 4802,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"../screenshots/dasa_test.js/Desafio Dasa -- Deve direcionar para laboratório especifico (failed).png\"",
+              "code": "var Lab = 'img[alt=\"Delboni Auriemo\"]';\nhomePage.visita();\nhomePage.sel_marcas();\nnossasMarcas.imprime_labs_sp();\nnossasMarcas.clicaLab(Lab);\nnossasMarcas.valida_lab(); //homePage.clica_link_page_lab()\ncy.get('.active > .content--overlay > .overlay--link > a').invoke('attr', 'href').then(function (hrefLink) {\n  //console.log(values)\n  cy.request({\n    method: 'GET',\n    url: hrefLink,\n    headers: {},\n    body: {},\n    resp: []\n  }).then(function (resp) {\n    expect(resp).property('status').to.equal(200);\n    console.log(resp.body);\n  });\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.nav-item a[href=\"/marcas\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.nav-item a[href=\"/marcas\"]`, but never found it.\n    at Object.sel_marcas (https://dasa.com.br/__cypress/tests?p=cypress\\integration\\dasa_test.js:79:6)\n    at Context.eval (https://dasa.com.br/__cypress/tests?p=cypress\\integration\\dasa_test.js:41:14)",
+                "diff": null
+              },
+              "uuid": "98a5b87e-ca4d-4956-bf84-b1b9b1d00354",
+              "parentUUID": "6ae897e1-040b-4d49-9e96-2a590d625304",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "98a5b87e-ca4d-4956-bf84-b1b9b1d00354"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4802,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportName": "Relatório Dasa",
+        "reportTitle": "Report Title Test",
+        "reportPageTitle": "Título da Página",
+        "defaultCommandTimeout": 100000,
+        "pageLoadTimeout": 900000,
+        "viewportWidth": 1200,
+        "requestTimeout": 90000,
+        "viewportHeight": 860,
+        "takePassedScreenshot": true,
+        "clearOldScreenshots": true,
+        "shortScrFileNames": false,
+        "jsonReport": false,
+        "multiReport": false,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-10T18:20:10.821Z",
+    "end": "2020-08-10T18:20:29.053Z",
+    "duration": 18232,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "36db66e0-6666-4286-9ff6-09f1377c9fe6",
+      "title": "",
+      "fullFile": "cypress\\integration\\desafio.feature",
+      "file": "cypress\\integration\\desafio.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e1916cf1-dede-4edc-9ff8-7ab6ef7e9bd9",
+          "title": "Desafio Dasa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve acessar o site e acessar o laboratorio Delboni Auriemo",
+              "fullTitle": "Desafio Dasa Deve acessar o site e acessar o laboratorio Delboni Auriemo",
+              "timedOut": null,
+              "duration": 18064,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"../screenshots/desafio.feature/Desafio Dasa -- Deve acessar o site e acessar o laboratorio Delboni Auriemo.png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "092ee332-d5ed-41b0-85ce-9aa73795e13f",
+              "parentUUID": "e1916cf1-dede-4edc-9ff8-7ab6ef7e9bd9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "092ee332-d5ed-41b0-85ce-9aa73795e13f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18064,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportName": "Relatório Dasa",
+        "reportTitle": "Report Title Test",
+        "reportPageTitle": "Título da Página",
+        "defaultCommandTimeout": 100000,
+        "pageLoadTimeout": 900000,
+        "viewportWidth": 1200,
+        "requestTimeout": 90000,
+        "viewportHeight": 860,
+        "takePassedScreenshot": true,
+        "clearOldScreenshots": true,
+        "shortScrFileNames": false,
+        "jsonReport": false,
+        "multiReport": false,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

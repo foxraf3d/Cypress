@@ -1,0 +1,24 @@
+{
+  "baseUrl": "https://dasa.com.br/",
+  "reporter": "mochawesome-screenshots",
+  "videoCompression": 15,
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "reportName": "Relatório Dasa",
+    "reportTitle": "Report Title Test",
+    "reportPageTitle": "Título da Página",
+    "defaultCommandTimeout": 100000,
+    "pageLoadTimeout": 900000,
+    "viewportWidth": 1200,
+    "requestTimeout": 90000,
+    "viewportHeight": 860,
+    "takePassedScreenshot": true,
+    "clearOldScreenshots": true,
+    "shortScrFileNames": false,
+    "jsonReport": false,
+    "multiReport": false,
+    "timestamp": "mmddyyyy_HHMMss"
+  },
+  "timeout": "600000",
+  "screenshotsFolder": "cypress/screenshots"
+}
